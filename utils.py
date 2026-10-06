@@ -54,3 +54,26 @@ def get_valid_number(prompt, is_float=True):
             return value
         except ValueError:
             print("Invalid input. Please enter a valid number.")
+
+def generate_receipt_number():
+    """Generates a unique receipt number like RCP-20250115-0001."""
+    today = datetime.now().strftime("%Y%m%d")
+    # In a real app, this would come from a database counter
+    import random
+    return f"RCP-{today}-{random.randint(1000, 9999)}"
+
+def get_timestamp():
+    """Returns a nicely formatted timestamp."""
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+def format_currency(amount):
+    """Formats a number as currency."""
+    return f"${amount:,.2f}"
+
+def print_divider(char="=", length=50):
+    """Prints a divider line."""
+    print(char * length)
+
+def pause():
+    """Wait for user to press Enter."""
+    input("\nPress Enter to continue...")

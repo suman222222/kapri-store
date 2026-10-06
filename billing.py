@@ -104,51 +104,63 @@ def add_items():
         process_bill(shopping_cart)
 
 def process_bill(cart):
-    """Calculates totals, prints receipt, and saves the transaction."""
+    """Calculates totals, prints receipt, saves transaction."""
     if not cart:
         print("\nNo items were added to the cart.")
         return
 
-    print("\n" + "=" * 45)
-    print("                 FINAL BILL")
-    print("=" * 45)
-    
-    subtotal = 0.0
-    
-    print(f"\n{'Item':<15} {'SKU':<10} {'Price':<9} {'Qty':<5} {'Total':<10}")
-    print("-" * 45)
-    
-    for item in cart:
-        subtotal += item['total_cost']
-        print(f"{item['name']:<15} {item['sku']:<10} ${item['price']:<8.2f} "
-              f"{item['quantity']:<5} ${item['total_cost']:<9.2f}")
-
+    subtotal = sum(item['total_cost'] for item in cart)
     vat = subtotal * 0.13
     final_total = subtotal + vat
 
-    print("-" * 45)
-    print(f"{'Subtotal:':<30} ${subtotal:.2f}")
-    print(f"{'13% VAT:':<30} ${vat:.2f}")
-    print(f"{'Final Total:':<30} ${final_total:.2f}")
-    print("=" * 45)
-
-    save_transaction(cart, subtotal, vat, final_total)
+    # Ask for payment method
+    print("\n--- Payment ---")
+    print(f"Total to pay: ${final_total:.2f}")
+    print("1. Cash")
+    print("2. Card")
+    payment_choice = input("Select payment method (1/2): ").strip()
     
-    input("\nPress Enter to return to the main menu...")
+    payment_info = {"method": "Card"}
+    
+    if payment_choice == '1':
+        payment_info["method"] = "Cash"
+        try:
+            cash = float(input(f"Cash received: $"))
+            if cash < final_total:
+                print(f"[Error] Insufficient cash. Need at least ${final_total:.2f}")
+                return
+            payment_info["cash_given"] = cash
+            payment_info["change"] = cash - final_total
+        except ValueError:
+            print("[Error] Invalid cash amount.")
+            return
+    
+    # Optional: customer name for loyalty
+    customer = input("Customer name (or press Enter to skip): ").strip() or None
+    
+    # Generate receipt
+    from receipt import generate_receipt_file
+    receipt_number = generate_receipt_file(cart, subtotal, vat, final_total, payment_info, customer)
+    
+    # Save to history
+    save_transaction(cart, subtotal, vat, final_total, receipt_number, payment_info)
+    
+    input("\nPress Enter to return to main menu...")
 
-def save_transaction(cart, subtotal, vat, final_total):
-    """Saves the current transaction to a history file."""
+def save_transaction(cart, subtotal, vat, final_total, receipt_number, payment_info):
+    """Saves the current transaction with full details."""
     history = load_json('transactions.json', [])
     
     transaction = {
+        "receipt_number": receipt_number,
         "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "items": cart,
         "subtotal": round(subtotal, 2),
         "vat": round(vat, 2),
-        "final_total": round(final_total, 2)
+        "final_total": round(final_total, 2),
+        "payment": payment_info
     }
     
     history.append(transaction)
     save_json('transactions.json', history)
-    print("✔ Transaction saved to history.")
-    logging.info(f"New transaction completed. Total: ${final_total:.2f}")
+    logging.info(f"Transaction {receipt_number} saved. Total: ${final_total:.2f}")
