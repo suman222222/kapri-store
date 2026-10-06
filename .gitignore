@@ -1,0 +1,35 @@
+# --- Python Specific ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (You will use these later for Full Stack)
+venv/
+env/
+.venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# --- VS Code Specific ---
+# Settings and workspace files
+.vscode/
+*.code-workspace
+
+# --- OS Specific (Windows/Mac) ---
+# Windows thumbnail cache
+Thumbs.db
+Desktop.ini
+
+# Mac OSX
+.DS_Store
+
+# --- Secrets & Database ---
+# Never upload local database files or environment variables
+*.sqlite3
+*.db
+.env
