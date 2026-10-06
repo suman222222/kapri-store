@@ -2,43 +2,43 @@
     "fruits": {
         "apple": {
             "sku": "FRT-001",
-            "price": 1.50,
-            "cost": 0.80,
+            "price": 1.5,
+            "cost": 0.8,
             "stock": 120,
             "unit": "per kg"
         },
         "banana": {
             "sku": "FRT-002",
             "price": 0.75,
-            "cost": 0.30,
+            "cost": 0.3,
             "stock": 200,
             "unit": "per dozen"
         },
         "orange": {
             "sku": "FRT-003",
-            "price": 2.00,
-            "cost": 1.10,
+            "price": 2.0,
+            "cost": 1.1,
             "stock": 85,
             "unit": "per kg"
         },
         "mango": {
             "sku": "FRT-004",
-            "price": 3.50,
-            "cost": 2.00,
+            "price": 3.5,
+            "cost": 2.0,
             "stock": 45,
             "unit": "per kg"
         },
         "grapes": {
             "sku": "FRT-005",
-            "price": 4.00,
-            "cost": 2.50,
+            "price": 4.0,
+            "cost": 2.5,
             "stock": 30,
             "unit": "per kg"
         },
         "watermelon": {
             "sku": "FRT-006",
-            "price": 3.00,
-            "cost": 1.80,
+            "price": 3.0,
+            "cost": 1.8,
             "stock": 25,
             "unit": "per piece"
         }
@@ -46,43 +46,43 @@
     "vegetables": {
         "potato": {
             "sku": "VEG-001",
-            "price": 1.20,
-            "cost": 0.60,
+            "price": 1.2,
+            "cost": 0.6,
             "stock": 300,
             "unit": "per kg"
         },
         "tomato": {
             "sku": "VEG-002",
-            "price": 2.10,
-            "cost": 1.20,
+            "price": 2.1,
+            "cost": 1.2,
             "stock": 150,
             "unit": "per kg"
         },
         "onion": {
             "sku": "VEG-003",
-            "price": 1.80,
-            "cost": 0.90,
+            "price": 1.8,
+            "cost": 0.9,
             "stock": 250,
             "unit": "per kg"
         },
         "carrot": {
             "sku": "VEG-004",
-            "price": 2.50,
-            "cost": 1.30,
+            "price": 2.5,
+            "cost": 1.3,
             "stock": 90,
             "unit": "per kg"
         },
         "spinach": {
             "sku": "VEG-005",
-            "price": 1.00,
-            "cost": 0.40,
+            "price": 1.0,
+            "cost": 0.4,
             "stock": 60,
             "unit": "per bunch"
         },
         "broccoli": {
             "sku": "VEG-006",
-            "price": 3.20,
-            "cost": 1.90,
+            "price": 3.2,
+            "cost": 1.9,
             "stock": 40,
             "unit": "per piece"
         }
@@ -90,36 +90,36 @@
     "dairy": {
         "milk": {
             "sku": "DRY-001",
-            "price": 3.20,
-            "cost": 2.10,
+            "price": 3.2,
+            "cost": 2.1,
             "stock": 80,
             "unit": "per liter"
         },
         "cheese": {
             "sku": "DRY-002",
-            "price": 6.50,
-            "cost": 4.00,
+            "price": 6.5,
+            "cost": 4.0,
             "stock": 40,
             "unit": "per 500g"
         },
         "butter": {
             "sku": "DRY-003",
-            "price": 4.80,
-            "cost": 3.20,
+            "price": 4.8,
+            "cost": 3.2,
             "stock": 55,
             "unit": "per 250g"
         },
         "yogurt": {
             "sku": "DRY-004",
-            "price": 2.20,
-            "cost": 1.30,
+            "price": 2.2,
+            "cost": 1.3,
             "stock": 70,
             "unit": "per cup"
         },
         "cream": {
             "sku": "DRY-005",
-            "price": 3.50,
-            "cost": 2.20,
+            "price": 3.5,
+            "cost": 2.2,
             "stock": 45,
             "unit": "per 200ml"
         }
@@ -127,73 +127,73 @@
     "bakery": {
         "bread": {
             "sku": "BKY-001",
-            "price": 2.50,
-            "cost": 1.40,
+            "price": 2.5,
+            "cost": 1.4,
             "stock": 100,
             "unit": "per loaf"
         },
         "croissant": {
             "sku": "BKY-002",
-            "price": 1.80,
-            "cost": 0.90,
+            "price": 1.8,
+            "cost": 0.9,
             "stock": 65,
             "unit": "per piece"
         },
         "muffin": {
             "sku": "BKY-003",
-            "price": 2.00,
-            "cost": 1.10,
+            "price": 2.0,
+            "cost": 1.1,
             "stock": 50,
             "unit": "per piece"
         },
         "bagel": {
             "sku": "BKY-004",
-            "price": 1.60,
-            "cost": 0.80,
+            "price": 1.6,
+            "cost": 0.8,
             "stock": 75,
             "unit": "per piece"
         },
         "cake": {
             "sku": "BKY-005",
-            "price": 12.00,
-            "cost": 7.50,
-            "stock": 15,
+            "price": 12.0,
+            "cost": 7.5,
+            "stock": 25,
             "unit": "per whole cake"
         }
     },
     "meat": {
         "chicken": {
             "sku": "MET-001",
-            "price": 8.00,
-            "cost": 5.50,
+            "price": 8.0,
+            "cost": 5.5,
             "stock": 35,
             "unit": "per kg"
         },
         "beef": {
             "sku": "MET-002",
-            "price": 12.50,
-            "cost": 9.00,
+            "price": 12.5,
+            "cost": 9.0,
             "stock": 20,
             "unit": "per kg"
         },
         "pork": {
             "sku": "MET-003",
-            "price": 10.00,
-            "cost": 7.20,
+            "price": 10.0,
+            "cost": 7.2,
             "stock": 25,
             "unit": "per kg"
         },
         "fish": {
             "sku": "MET-004",
-            "price": 9.50,
-            "cost": 6.80,
+            "price": 9.5,
+            "cost": 6.8,
             "stock": 30,
             "unit": "per kg"
         },
         "prawns": {
             "sku": "MET-005",
-            "price": 15.00,
-            "cost": 11.00,
+            "price": 15.0,
+            "cost": 11.0,
             "stock": 15,
             "unit": "per kg"
         }
@@ -201,50 +201,50 @@
     "pantry": {
         "rice": {
             "sku": "PNT-001",
-            "price": 5.50,
-            "cost": 3.80,
+            "price": 5.5,
+            "cost": 3.8,
             "stock": 150,
             "unit": "per 5kg"
         },
         "eggs": {
             "sku": "PNT-002",
-            "price": 4.00,
-            "cost": 2.70,
+            "price": 4.0,
+            "cost": 2.7,
             "stock": 200,
             "unit": "per dozen"
         },
         "flour": {
             "sku": "PNT-003",
-            "price": 3.00,
-            "cost": 1.90,
+            "price": 3.0,
+            "cost": 1.9,
             "stock": 120,
             "unit": "per 2kg"
         },
         "sugar": {
             "sku": "PNT-004",
-            "price": 2.80,
-            "cost": 1.70,
+            "price": 2.8,
+            "cost": 1.7,
             "stock": 180,
             "unit": "per 2kg"
         },
         "cooking oil": {
             "sku": "PNT-005",
-            "price": 6.50,
-            "cost": 4.50,
+            "price": 6.5,
+            "cost": 4.5,
             "stock": 95,
             "unit": "per liter"
         },
         "salt": {
             "sku": "PNT-006",
-            "price": 1.00,
-            "cost": 0.40,
+            "price": 1.0,
+            "cost": 0.4,
             "stock": 250,
             "unit": "per 1kg"
         },
         "lentils": {
             "sku": "PNT-007",
-            "price": 3.50,
-            "cost": 2.20,
+            "price": 3.5,
+            "cost": 2.2,
             "stock": 100,
             "unit": "per 1kg"
         }
@@ -252,43 +252,43 @@
     "beverages": {
         "water": {
             "sku": "BEV-001",
-            "price": 0.50,
-            "cost": 0.20,
+            "price": 0.5,
+            "cost": 0.2,
             "stock": 500,
             "unit": "per 1L bottle"
         },
         "juice": {
             "sku": "BEV-002",
-            "price": 2.80,
-            "cost": 1.60,
+            "price": 2.8,
+            "cost": 1.6,
             "stock": 90,
             "unit": "per 1L"
         },
         "coffee": {
             "sku": "BEV-003",
-            "price": 7.50,
-            "cost": 5.00,
+            "price": 7.5,
+            "cost": 5.0,
             "stock": 40,
             "unit": "per 250g"
         },
         "tea": {
             "sku": "BEV-004",
-            "price": 4.20,
-            "cost": 2.60,
+            "price": 4.2,
+            "cost": 2.6,
             "stock": 60,
             "unit": "per 100 bags"
         },
         "soda": {
             "sku": "BEV-005",
-            "price": 1.50,
-            "cost": 0.80,
+            "price": 1.5,
+            "cost": 0.8,
             "stock": 150,
             "unit": "per 500ml"
         },
         "energy drink": {
             "sku": "BEV-006",
-            "price": 3.00,
-            "cost": 1.80,
+            "price": 3.0,
+            "cost": 1.8,
             "stock": 80,
             "unit": "per can"
         }
@@ -296,36 +296,36 @@
     "snacks": {
         "chocolate": {
             "sku": "SNK-001",
-            "price": 2.00,
-            "cost": 1.20,
+            "price": 2.0,
+            "cost": 1.2,
             "stock": 100,
             "unit": "per bar"
         },
         "chips": {
             "sku": "SNK-002",
-            "price": 1.80,
-            "cost": 1.00,
+            "price": 1.8,
+            "cost": 1.0,
             "stock": 120,
             "unit": "per pack"
         },
         "biscuits": {
             "sku": "SNK-003",
-            "price": 1.20,
-            "cost": 0.60,
+            "price": 1.2,
+            "cost": 0.6,
             "stock": 200,
             "unit": "per pack"
         },
         "nuts": {
             "sku": "SNK-004",
-            "price": 5.00,
-            "cost": 3.20,
+            "price": 5.0,
+            "cost": 3.2,
             "stock": 60,
             "unit": "per 250g"
         },
         "popcorn": {
             "sku": "SNK-005",
-            "price": 1.50,
-            "cost": 0.80,
+            "price": 1.5,
+            "cost": 0.8,
             "stock": 90,
             "unit": "per pack"
         }
@@ -333,36 +333,36 @@
     "household": {
         "soap": {
             "sku": "HHD-001",
-            "price": 1.50,
-            "cost": 0.80,
-            "stock": 180,
+            "price": 1.5,
+            "cost": 0.8,
+            "stock": 130,
             "unit": "per bar"
         },
         "detergent": {
             "sku": "HHD-002",
-            "price": 5.00,
-            "cost": 3.20,
+            "price": 5.0,
+            "cost": 3.2,
             "stock": 70,
             "unit": "per 1kg"
         },
         "toothpaste": {
             "sku": "HHD-003",
-            "price": 3.50,
-            "cost": 2.10,
+            "price": 3.5,
+            "cost": 2.1,
             "stock": 90,
             "unit": "per tube"
         },
         "shampoo": {
             "sku": "HHD-004",
-            "price": 4.80,
-            "cost": 3.00,
+            "price": 4.8,
+            "cost": 3.0,
             "stock": 55,
             "unit": "per bottle"
         },
         "tissue roll": {
             "sku": "HHD-005",
-            "price": 1.20,
-            "cost": 0.60,
+            "price": 1.2,
+            "cost": 0.6,
             "stock": 200,
             "unit": "per roll"
         }
