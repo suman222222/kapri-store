@@ -214,6 +214,5 @@ Logging: Professional audit trail using the logging module.
 
 👨‍💻 Author
 Suman Kapri
-Second-Year Computer Science Student
-Passionate about Full Stack Development, UI/UX, and Software Architecture.
+Full Stack Development, UI/UX, and Software Architecture.
 
